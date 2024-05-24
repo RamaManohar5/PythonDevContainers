@@ -1,6 +1,0 @@
-{
-    "name" : "python-server",
-    "build" :{
-        "dockerfile": "Dockerfile"
-    }
-}
