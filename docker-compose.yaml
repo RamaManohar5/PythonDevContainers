@@ -1,0 +1,5 @@
+services:
+  app:
+    build: .
+    container_name: python-server
+    command: python src.test.py
