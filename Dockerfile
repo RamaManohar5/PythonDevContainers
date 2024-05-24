@@ -1,12 +1,5 @@
-FROM python:3.11-slim-bookworm
+FROM python:3.11-slim
 
-WORKDIR /git_repo
+WORKDIR /code
 
-COPY ./requirements.txt ./
-
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY ./src ./src
-
-CMD [ "/bin/sh", "-c", "bash" ]
-
+COPY . /code/clear
