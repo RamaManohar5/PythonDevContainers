@@ -1,4 +1,5 @@
 services:
   code:
     build: .
+    nocache: true
     container_name: python-server
