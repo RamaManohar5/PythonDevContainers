@@ -1,5 +1,11 @@
+
 services:
   code:
-    build: .
-    nocache: true
+    build: 
+      context: .
+      dockerfile: Dockerfile
     container_name: python-server
+    ports:
+      - "8080:8080"  # Forward port 8080 from the host to port 8080 in the container
+    volumes:
+      - .:/code
